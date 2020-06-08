@@ -15,7 +15,7 @@ from sample_config import Config
 
 
 import pyrogram
-rom pyrogram import Client, Message, Filters
+from pyrogram import Client, Message, Filters
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 @pyrogram.Client.on_message(pyrogram.Filters.service)
