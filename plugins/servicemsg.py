@@ -8,9 +8,6 @@ logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-import os
-import sqlite3
-
 from sample_config import Config
 
 
