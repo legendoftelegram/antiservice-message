@@ -15,13 +15,13 @@ from sample_config import Config
 
 
 import pyrogram
-from pyrogram import Filters
+rom pyrogram import Client, Message, Filters
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 @pyrogram.Client.on_message(pyrogram.Filters.service)
-async def service(b:bot, u:update):
-    await b.delete_messages(chat_id=u.chat.id, message_ids=u.message_id)
+async def service(c: Client, m: Message):
+    await c.delete_messages(chat_id=m.chat.id, message_ids=m.message_id)
 
 @pyrogram.Client.on_message(pyrogram.Filters.command(["start"]))
-async def start(b:bot, u:update):
-    await b.send_message(chat_id=u.chat.id, text="**im an anti-service message deletor**")    
+async def start(c: Client, m: Message):
+    await c.send_message(chat_id=m.chat.id, text="**im an anti-service message deletor**")    
