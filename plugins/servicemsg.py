@@ -14,9 +14,6 @@ import sqlite3
 from sample_config import Config
 
 
-# the Strings used for this "thing"
-from translation import Translation
-
 import pyrogram
 from pyrogram import Filters
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
