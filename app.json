@@ -1,15 +1,26 @@
 {
-  "name": "service msg deleter",
-  "description": "a simple pyro bot",
+  "name": "AnyDLBot",
+  "description": "Telegram's best YouTube Downloader. Create your Fork now.",
   "keywords": [
     "telegram",
-    "delete"
+    "best",
+    "youtube",
+    "downloader",
+    "3"
   ],
-  "repository": "https://github.com/anandus0070/antiservice-message",
+  "repository": "https://github.com/ananduks2016/megadl",
   "env": {
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
+    },
     "TG_BOT_TOKEN": {
       "description": "Your bot token, as a string.",
       "value": ""
+    },
+    "PORT": {
+      "description": "Port to use for your webhooks",
+      "value": "5000"
     },
     "APP_ID": {
       "description": "Get this value from https://my.telegram.org",
@@ -19,10 +30,20 @@
       "description": "Get this value from https://my.telegram.org",
       "value": ""
     },
+    "AUTH_USERS": {
+      "description": "allow only pre-defined users to use this bot",
+      "value": "570400686"
+    },
+    "CHUNK_SIZE": {
+      "description": "chunk size that should be used with requests",
+      "value": "",
+      "required": false
+    },
   "addons": [
   ],
   "buildpacks": [{
     "url": "heroku/python"
   }]
 }
+
 
