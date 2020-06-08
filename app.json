@@ -1,4 +1,5 @@
- "name": "service msg deleter",
+{
+  "name": "service msg deleter",
   "description": "a simple pyro bot",
   "keywords": [
     "telegram",
