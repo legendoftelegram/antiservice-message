@@ -5,4 +5,5 @@ DEPLOY to heroku by clicking following button
 <B>@TR_BOTS</B>
 <B>@legendoftelegram</B>
 
-delete join,leave pin messages automatically
+<B>delete service messages automatically</B>
+
