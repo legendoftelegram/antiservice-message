@@ -1,0 +1,28 @@
+ "name": "service msg deleter",
+  "description": "a simple pyro bot",
+  "keywords": [
+    "telegram",
+    "delete"
+  ],
+  "repository": "https://github.com/anandus0070/antiservice-message",
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    }
+  },   
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }]
+}
+
